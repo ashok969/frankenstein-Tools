@@ -1,0 +1,15 @@
+{
+    "enable": "houdini_version >= '19.5'",
+    "version": "19.5.303",
+    "env" : [
+        {
+            "FNKTOOLS"       : "$HOUDINI_PACKAGE_PATH/.."
+        },
+        {
+            "HOUDINI_PATH"  : {
+                "value"     : ["$FNKTOOLS/frankensteinTools"],
+                "method"    : "prepend"
+            }
+        }
+    ]
+}
