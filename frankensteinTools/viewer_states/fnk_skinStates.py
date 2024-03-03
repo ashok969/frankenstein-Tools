@@ -6,8 +6,8 @@ from    stateutils      import ancestorObject
 from    stateutils      import sopGeometryIntersection
 from    stateutils      import cplaneIntersection
 
-from    fnkTools        import FNKBrushDrawable
-from    fnkTools        import FNKRigDrawable
+from    frankensteinTools.drawables        import FNKBrushDrawable
+from    frankensteinTools.drawables        import DrawableSkeleton
 
 
 
@@ -37,7 +37,7 @@ class FKNSkinState(object):
         self.brush              = FNKBrushDrawable(state_name, scene_viewer)
         self.brush.hide()
 
-        self._rigDrawable       = FNKRigDrawable(state_name, scene_viewer)
+        self._rigDrawable       = DrawableSkeleton(state_name, scene_viewer)
 
         self.scene_viewer.hudInfo(template=HUD_TEMPLATE)
 

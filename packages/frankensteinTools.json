@@ -1,6 +1,6 @@
 {
-    "enable": "houdini_version >= '19.5'",
-    "version": "19.5.303",
+    "enable": "houdini_version >= '20.0'",
+    "version": "20.0.524",
     "env" : [
         {
             "FNKTOOLS"       : "$HOUDINI_PACKAGE_PATH/.."

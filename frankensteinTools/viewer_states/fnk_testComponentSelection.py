@@ -2,7 +2,7 @@
 import hou
 import viewerstate.utils as su
 
-from    fnkTools        import FNKRigDrawable
+from    frankensteinTools.drawables import DrawableSkeleton
 
 
 class State(object):
@@ -12,7 +12,7 @@ class State(object):
         self._stateName                 = state_name
         self._sceneViewer               = scene_viewer 
 
-        self._rigDrawable               = FNKRigDrawable(self._stateName, self._sceneViewer)
+        self._rigDrawable               = DrawableSkeleton(self._stateName, self._sceneViewer)
         self._node                      = None
 
     def onEnter(self, kwargs):
